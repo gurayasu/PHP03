@@ -31,10 +31,10 @@ UserLogic::logout();
 </head>
 
 <body>
-    <h2>ログアウト完了</h2>
-    <p>ログアウト完了しました！</p>
-    <p>See you next time!</p>
-    <a href="signup.php">ユーザー登録画面へ</a>
+    <h2 class="m-3">ログアウト完了</h2>
+    <p class="m-3">ログアウト完了しました！</p>
+    <p class="m-3">See you next time!</p>
+    <a class="m-3" href="signup.php">ユーザー登録画面へ</a>
 
 </body>
 

@@ -30,45 +30,47 @@ session_destroy();
 </head>
 
 <body>
-    <h2 class="text-muted">ログイン画面</h2>
+    <h2 class="text-muted m-3">ログイン画面</h2>
     <?php if (isset($err['msg'])) : ?>
         <p><?php echo $err['msg']; ?></p>
     <?php endif; ?>
     <form action="login.php" method="POST">
-        <div class="form-group w-25">
+        <div class="form-group w-25 m-3">
             <p>
                 <label for="username">ユーザー名: </label>
-                <input type="text" name="username" class="form-control">
+                <input type="text" name="username" class="form-control m-3">
                 <?php if (isset($err['username'])) : ?>
             <p><?php echo $err['username']; ?></p>
         <?php endif; ?>
         </p>
         </div>
-        <div class="form-group w-25">
+        <div class="form-group w-25 m-3">
             <p>
                 <label for="email">Email: </label>
-                <input type="email" name="email" class="form-control">
+                <input type="email" name="email" class="form-control m-3">
                 <?php if (isset($err['email'])) : ?>
             <p><?php echo $err['email']; ?></p>
         <?php endif; ?>
         </p>
         </div>
-        <div class="form-group w-25">
+        <div class="form-group w-25 m-3">
             <p>
                 <label for="password">パスワード: </label>
-                <input type="password" name="password" class="form-control">
+                <input type="password" name="password" class="form-control m-3">
                 <?php if (isset($err['password'])) : ?>
             <p><?php echo $err['password']; ?></p>
         <?php endif; ?>
         <p>（12345678）</p>
         </p>
         </div>
-        <div class="form-group w-25">
+        <div class="form-group w-25 m-3">
             <p>
-                <input type="submit" value="ログイン" class="form-control w-25">
+                <input type="submit" value="ログイン" class="form-control w-25 m-3">
             </p>
         </div>
-        <a href="signup.php">ユーザー登録はこちら</a>
+        <div class="m-3">
+            <a href="signup.php">ユーザー登録はこちら</a>
+        </div>
     </form>
 
 </body>

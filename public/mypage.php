@@ -29,16 +29,16 @@ $login_user = $_SESSION['login_user'];
 </head>
 
 <body>
-    <h2>マイページ</h2>
+    <h2 class="text-muted m-3">マイページ</h2>
     <form action="../index.php" method="POST">
-        <p>ユーザー名: <?php echo h($login_user['name']); ?></p>
-        <p>Email: <?php echo h($login_user['email']); ?></p>
+        <p class="m-3">ユーザー名: <?php echo h($login_user['name']); ?></p>
+        <p class="m-3">Email: <?php echo h($login_user['email']); ?></p>
         <input type="hidden" name="username" value="<?php echo h($login_user['name']) ?>">
         <input type="hidden" name="email" value="<?php echo h($login_user['email']) ?>">
-        <input type="submit" name="logout" class="form-control w-25" value="サブスク画面へ">
+        <input type="submit" name="logout" class="form-control w-25 m-3" value="サブスク画面へ">
     </form>
     <form action="logout.php" method="POST">
-        <input type="submit" name="logout" class="form-control w-25" value="ログアウト">
+        <input type="submit" name="logout" class="form-control w-25 m-3" value="ログアウト">
     </form>
 </body>
 

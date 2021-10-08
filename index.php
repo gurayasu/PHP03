@@ -31,11 +31,11 @@ $email = $_POST['email'];
 
 <body>
 
-    <h2 class="text-muted">サブスク管理</h2>
-    <h5>ユーザー名：<?php echo ($name) ?></h5>
-    <h5>Email：<?php echo ($email) ?></h5>
-    <h4>登録済みのサブスク一覧</h4>
-    <table class="table table-bordered w-50">
+    <h2 class="text-muted m-3">サブスク管理</h2>
+    <h5 class="m-3">ユーザー名：<?php echo ($name) ?></h5>
+    <h5 class="m-3">Email：<?php echo ($email) ?></h5>
+    <h4 class="m-3">登録済みのサブスク一覧</h4>
+    <table class="table table-bordered w-50 m-3">
         <tr>
             <th>サブスク名</th>
             <th>入会日</th>
@@ -53,16 +53,16 @@ $email = $_POST['email'];
             </tr>
         <?php endforeach; ?>
     </table>
-    <h4>サブスク合計額（毎月）：<?php echo ($result['SUM(money)']) ?>円</h4>
+    <h4 class="m-3">サブスク合計額（毎月）：<?php echo ($result['SUM(money)']) ?>円</h4>
 
     <form action="form.php" method="POST">
         <input type="hidden" name="username" value="<?php echo h($name) ?>">
         <input type="hidden" name="email" value="<?php echo h($email) ?>">
-        <input type="submit" name="register" class="form-control w-25" value="サブスク新規登録">
+        <input type="submit" name="register" class="form-control w-25 m-3" value="サブスク新規登録">
     </form>
 
 
-    <a href="public/mypage.php">マイページへ戻る</a>
+    <a class="m-3" href="public/mypage.php">マイページへ戻る</a>
 
     <!-- ボタンを使ったテスト用
     <button id="btn">通知</button> -->

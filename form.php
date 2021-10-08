@@ -21,28 +21,28 @@ $email = $_POST['email'];
 </head>
 
 <body>
-    <h2 class="text-muted">サブスク登録</h2>
-    <div class="form-group w-25">
+    <h2 class="text-muted m-3">サブスク登録</h2>
+    <div class="form-group w-25 m-3">
         <form action="input.php" method="POST">
             <p>サブスク名</p>
-            <input type="text" name="sb_name" class="form-control">
+            <input type="text" name="sb_name" class="form-control m-3">
             <p>入会日</p>
-            <input type="date" name="join_date" class="form-control">
+            <input type="date" name="join_date" class="form-control m-3">
             <p>月額</p>
-            <input type="text" name="money" class="form-control">
+            <input type="text" name="money" class="form-control m-3">
             <p>リンク</p>
-            <input type="text" name="link" class="form-control">
+            <input type="text" name="link" class="form-control m-3">
             <input type="hidden" name="username" value="<?php echo $name ?>">
             <input type="hidden" name="email" value="<?php echo $email ?>">
-            <input type="submit" value="登録" class="form-control w-50">
+            <input type="submit" value="登録" class="form-control w-50 m-3">
         </form>
     </div>
     <!-- <p><a href="index.php">サブスク管理画面に戻る</a></p> -->
-    <div class="form-group w-25">
+    <div class="form-group w-25 m-3">
         <form action="index.php" method="post">
             <input type="hidden" name="username" value="<?php echo $name ?>">
             <input type="hidden" name="email" value="<?php echo $email ?>">
-            <input type="submit" value="サブスク管理画面に戻る" class="form-control w-50">
+            <input type="submit" value="サブスク管理画面に戻る" class="form-control w-50 m-3">
         </form>
     </div>
 

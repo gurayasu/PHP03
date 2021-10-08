@@ -53,9 +53,9 @@ if (!$result) {
 </head>
 
 <body>
-    <h2 class="text-muted">ログイン完了</h2>
-    <p>ログイン完了しました！</p>
-    <p><a href="mypage.php">マイページへ</a></p>
+    <h2 class="text-muted m-3">ログイン完了</h2>
+    <p class="m-3">ログイン完了しました！</p>
+    <p class="m-3"><a href="mypage.php">マイページへ</a></p>
 </body>
 
 </html>

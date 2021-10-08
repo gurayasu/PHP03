@@ -63,11 +63,13 @@ try {
 
 <body>
 
-    <form action="index.php" method="post">
-        <input type="hidden" name="username" value="<?php echo $name ?>">
-        <input type="hidden" name="email" value="<?php echo $email ?>">
-        <input type="submit" value="サブスク管理画面に戻る">
-    </form>
+    <div class="m-3">
+        <form action="index.php" method="post">
+            <input type="hidden" name="username" value="<?php echo $name ?>">
+            <input type="hidden" name="email" value="<?php echo $email ?>">
+            <input class="form-control w-25 m-3" type="submit" value="サブスク管理画面に戻る">
+        </form>
+    </div>
 
 </body>
 

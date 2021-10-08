@@ -49,8 +49,10 @@ try {
 
 <!-- <p><a href="index.php">サブスク管理画面に戻る</a></p> -->
 
-<form action="index.php" method="post">
-    <input type="hidden" name="username" value="<?php echo $input['name']; ?>">
-    <input type="hidden" name="email" value="<?php echo $input['email']; ?>">
-    <input type="submit" value="サブスク管理画面に戻る">
-</form>
+<div class="m-3">
+    <form action="index.php" method="post">
+        <input type="hidden" name="username" value="<?php echo $input['name']; ?>">
+        <input type="hidden" name="email" value="<?php echo $input['email']; ?>">
+        <input class="m-3" type="submit" value="サブスク管理画面に戻る">
+    </form>
+</div>

@@ -30,29 +30,29 @@ session_destroy();
 </head>
 
 <body>
-    <h2 class="text-muted">管理者ログイン画面</h2>
+    <h2 class="text-muted m-3">管理者ログイン画面</h2>
     <?php if (isset($err['msg'])) : ?>
         <p><?php echo $err['msg']; ?></p>
     <?php endif; ?>
-    <div class="form-group w-25">
+    <div class="form-group w-25" m-3>
         <form action="login_manager.php" method="POST">
             <p>
                 <label for="username">ユーザー名: </label>
-                <input type="text" name="username" class="form-control">
+                <input type="text" name="username" class="form-control m-3">
                 <?php if (isset($err['username'])) : ?>
             <p><?php echo $err['username']; ?></p>
         <?php endif; ?>
         </p>
         <p>
             <label for="email">Email: </label>
-            <input type="email" name="email" class="form-control">
+            <input type="email" name="email" class="form-control m-3">
             <?php if (isset($err['email'])) : ?>
         <p><?php echo $err['email']; ?></p>
     <?php endif; ?>
     </p>
     <p>
         <label for="password">パスワード: </label>
-        <input type="password" name="password" class="form-control">
+        <input type="password" name="password" class="form-control m-3">
         <?php if (isset($err['password'])) : ?>
     <p><?php echo $err['password']; ?></p>
 <?php endif; ?>
@@ -62,9 +62,9 @@ session_destroy();
     <input type="hidden" name="manager" value="<?php echo $err['manager']; ?>">
 </p>
 <p>
-    <input type="submit" value="ログイン" class="form-control w-50">
+    <input type="submit" value="ログイン" class="form-control w-50 m-3">
 </p>
-<a href="signup.php">ユーザー登録はこちら</a>
+<a class="m-3" href="signup.php">ユーザー登録はこちら</a>
         </form>
     </div>
 

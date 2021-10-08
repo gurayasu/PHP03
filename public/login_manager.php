@@ -57,9 +57,9 @@ if (!$result) {
 </head>
 
 <body>
-    <h2 class="text-muted">管理者ログイン完了</h2>
-    <p>管理者ログイン完了しました！</p>
-    <p><a href="manager.php">管理者ページへ</a></p>
+    <h2 class="text-muted m-3 class=" m-3"">管理者ログイン完了</h2>
+    <p class="m-3">管理者ログイン完了しました！</p>
+    <p class="m-3"><a href="manager.php">管理者ページへ</a></p>
 </body>
 
 </html>
